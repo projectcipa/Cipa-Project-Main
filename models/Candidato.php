@@ -1,24 +1,24 @@
 <?php
     class Candidatos {
-        private int $id_candidato
-        private int $funcionario_FK
-        private int $foto_candidato
-        private int $numero_candidato
-        private int $cargo_candidato
-        private int $data_registro_candidato
-        private int $eleicao_FK
-        private int $status_candidato_ata
-        private int $quantidade_voto_candidato
+        private int $id_candidato;
+        private int $funcionario_FK;
+        private int $foto_candidato;
+        private int $numero_candidato;
+        private int $cargo_candidato;
+        private int $data_registro_candidato;
+        private int $eleicao_FK;
+        private int $status_candidato_ata;
+        private int $quantidade_voto_candidato;
 
         public function __construct(
-            $_idCandidato
-            $_funcionarioFK
-            $_fotoCandidato
-            $_numeroCandidato
-            $_cargoCandidato
-            $_dataRegistroCandidato
-            $_eleicaoFK
-            $_statusCandidatoAta
+            $_idCandidato,
+            $_funcionarioFK,
+            $_fotoCandidato,
+            $_numeroCandidato,
+            $_cargoCandidato,
+            $_dataRegistroCandidato,
+            $_eleicaoFK,
+            $_statusCandidatoAta,
             $_quantidadeVotoCandidato
         ) {
             $this->id_candidato = $_idCandidato;

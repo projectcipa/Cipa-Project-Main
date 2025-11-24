@@ -1,13 +1,13 @@
 <?php
     require_once __DIR__ . "../utils/conexao.php";
-    require_once __DIR__ . "../models/Funcionario.php"
-    class FuncionarioDAO extends Conexao () {
+    require_once __DIR__ . "../models/Funcionario.php";
+    class FuncionarioDAO extends Conexao  {
         public function __construct() {}
 
         public function registrarFuncionario(Funcionario $funcionario) {
             
             try {
-                echo "estou eme usuario dao <br>"
+                echo "estou eme usuario dao <br>";
                 echo $Funcionarios->getNome_funcionario();
                 $sql = "INSERT INTO funcionario (
                 nome_funcionario,						

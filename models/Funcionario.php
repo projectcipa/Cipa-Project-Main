@@ -1,18 +1,18 @@
 <?php
     class Funcionarios  {
-        private int $id_funcionario
-	    private string $nome_funcionario
-	    private string $sobrenome_funcionario
-	    private string $CPF_funcionario
-	    private string $data_nascimento_funcionario
-	    private string $data_contratacao_funcionario
-	    private int $telefone_funcionario
-	    private string $matricula_funcionario
-	    private int $codigo_voto_funcionario
-	    private bool $ativo_funcionario
-	    private bool $ADM_funcionario
-	    private string $email_funcionario
-	    private string $senha_funcionario
+        private int $id_funcionario;
+	    private string $nome_funcionario;
+	    private string $sobrenome_funcionario;
+	    private string $CPF_funcionario;
+	    private string $data_nascimento_funcionario;
+	    private string $data_contratacao_funcionario;
+	    private int $telefone_funcionario;
+	    private string $matricula_funcionario;
+	    private int $codigo_voto_funcionario;
+	    private bool $ativo_funcionario;
+	    private bool $ADM_funcionario;
+	    private string $email_funcionario;
+	    private string $senha_funcionario;
 
         public function __construct(
             $_idFuncionario,
@@ -33,7 +33,7 @@
             $this->nome_funcionario = $_nomeFuncionario;
             $this->sobrenome_funcionario = $_sobrenomeFuncionario;
             $this->CPF_funcionario = $_CPFFuncionario;
-            $this->$data_nascimento_funcionario = $_dataNascimentoFuncionario;
+            $this->data_nascimento_funcionario = $_dataNascimentoFuncionario;
             $this->data_contratacao_funcionario = $_dataContratacaoFuncionario;
             $this->telefone_funcionario = $_telefoneFuncionario;
             $this->matricula_funcionario = $_matriculaFuncionario;
