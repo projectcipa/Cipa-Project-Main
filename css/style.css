@@ -1,0 +1,31 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button{
+
+    color: #4d524a;
+    background-color: #fcb900;
+    align-self: center;
+    padding: 13px;
+    border-radius: 5px;
+
+}
+
+button:hover{
+
+    cursor: pointer;
+
+}
