@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <h1>Sistema da CIPA</h1>
+        <h1>cipa</h1>
         <h1>Página inicial</h1>
     </header>
 
