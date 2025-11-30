@@ -7,8 +7,8 @@
         public function registrarFuncionario(Funcionario $funcionario) {
             
             try {
-                echo "estou eme usuario dao <br>";
-                echo $Funcionarios->getNome_funcionario();
+                echo "estou em usuario dao <br>";
+                echo $funcionario->getNome_funcionario();
                 $sql = "INSERT INTO funcionario (
                 nome_funcionario,						
 	            sobrenome_funcionario,
@@ -51,7 +51,7 @@
                 $stmt->bindValue(":email_funcionario", $funcionario->getEmail_funcionario(), PDO::PARAM_STR);
                 $stmt->bindValue(":senha_funcionario", $funcionario->getSenha_funcionario(), PDO::PARAM_STR);
             } catch (PDOException $e) {
-                echo("Error Funcionario DAO: " . $e->getMessage());
+                echo("Erro Funcionario DAO: " . $e->getMessage());
                 $response = false;
             } finally {
                 return $response;

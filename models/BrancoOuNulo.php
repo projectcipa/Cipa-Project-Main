@@ -1,5 +1,5 @@
 <?php
-    class BrancosOuNulos {
+    class BrancoOuNulo {
         private int $id_branco_nulo;
         private int $quatidade_branco;
         private int $quantidade_nulo;

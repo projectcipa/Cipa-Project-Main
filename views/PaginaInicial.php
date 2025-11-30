@@ -10,11 +10,10 @@
 <body>
 
     <header>
-        <h1>cipa</h1>
         <h1>Página inicial</h1>
     </header>
 
-    <a href="index.php?view=CadastroFuncionario">
+    <a href="index.php?view=cadastroFuncionario">
         <button>Ir para Cadastro de Funcionarios</button>
     </a>
     

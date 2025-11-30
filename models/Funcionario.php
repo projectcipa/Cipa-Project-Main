@@ -1,5 +1,5 @@
 <?php
-    class Funcionarios  {
+    class Funcionario  {
         private int $id_funcionario;
 	    private string $nome_funcionario;
 	    private string $sobrenome_funcionario;

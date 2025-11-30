@@ -1,5 +1,5 @@
 <?php
-    class Votos {
+    class Voto {
         private int $id_voto;
         private string $data_hora_voto;
         private int $funcionario_FK;

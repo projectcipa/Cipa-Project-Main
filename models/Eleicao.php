@@ -1,5 +1,5 @@
 <?php
-    class Eleicoes {
+    class Eleicao {
         private int $id_eleicao;
         private int $edital_FK;
         private string $data_inicio_eleicao;

@@ -1,5 +1,5 @@
 <?php 
-    class Documentos {
+    class Documento {
         private int $id_documento;
         private string $data_hora_documento;
         private string $data_inicio_documento;

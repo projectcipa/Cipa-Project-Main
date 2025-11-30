@@ -8,11 +8,19 @@ function carregarView($view) {
             break;
 
         case 'CadastroFuncionario':
-            require "views/CadastroFuncionarios.php";
+            require "views/cadastroFuncionarios.php";
             break;
 
         default:
             require "views/PaginaInicial.php";
+            break;
+
+        case 'PaginaInicial':
+            require "views/PaginaInicial.php";
+            break;
+
+        case 'cadastroFuncionario':
+            require "views/cadastroFuncionarios.php";
             break;
 
     }

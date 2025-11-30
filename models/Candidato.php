@@ -1,5 +1,5 @@
 <?php
-    class Candidatos {
+    class Candidato {
         private int $id_candidato;
         private int $funcionario_FK;
         private int $foto_candidato;
