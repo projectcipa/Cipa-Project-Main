@@ -1,6 +1,6 @@
 <?php
 
-    require_once __DIR__  . "/controllers/CarregarView.php";
+    require_once __DIR__ . "/controllers/CarregarView.php";
     $view = $_GET['view'] ?? 'PaginaInicial';
 
 ?>

@@ -7,7 +7,7 @@
     <title>Cadastro de funcionarios</title>
 </head>
 <body>
-    <form action="/Cipa-Project-Main/views/funcionarioCriado.php" method="POST">
+    <form action="index.php?view=FuncionarioCriado" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" name="nome_funcionario" id="nome">
         <br>
@@ -17,11 +17,11 @@
         <label for="CPF">CPF: </label>
         <input type="text" name="CPF_funcionario" id="CPF">
         <br>
-        <label for="data_nascimento">Data de Nascimento: </label>
+        <label for="data_nascimento">Desata de Nascimento: </label>
         <input type="date" name="data_nascimento_funcionario" id="data_nascimento">
         <br>
         <label for="data_admissao">Data de Admissão: </label>
-        <input type="date" name="data_admissao_funcionario" id="data_admissao">
+        <input type="date" name="data_contratacao_funcionario" id="data_contratacao">
         <br>
         <label for="telefone">Telefone: </label>
         <input type="text" name="telefone_funcionario" id="telefone">

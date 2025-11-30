@@ -4,7 +4,7 @@
         private string $dbname = "CIPA_APP";
         private string $user = "root"
         private string $password = "";
-        private string $port = "3306";
+        private string $port = "3307";
     
         public function __construct() {
             

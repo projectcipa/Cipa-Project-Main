@@ -1,5 +1,6 @@
 <?php
 
+
 function carregarView($view) {
     switch ($view) {
 
@@ -11,16 +12,17 @@ function carregarView($view) {
             require "views/cadastroFuncionarios.php";
             break;
 
-        default:
-            require "views/PaginaInicial.php";
-            break;
-
-        case 'PaginaInicial':
-            require "views/PaginaInicial.php";
-            break;
-
         case 'cadastroFuncionario':
             require "views/cadastroFuncionarios.php";
+            break;
+
+        case 'FuncionarioCriado':
+            require "views/funcionarioCriado.php";
+            break;    
+
+
+          default:
+            require "views/PaginaInicial.php";
             break;
 
     }
