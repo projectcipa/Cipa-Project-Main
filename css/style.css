@@ -16,6 +16,23 @@ header{
 
 }
 
+body{
+
+    align-items: center;
+    align-content: center;
+
+}
+
+.opcoes{
+
+    margin-top: 35px;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
 button{
 
     color: #4d524a;

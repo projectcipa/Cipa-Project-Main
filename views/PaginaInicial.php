@@ -13,9 +13,20 @@
         <h1>Página inicial</h1>
     </header>
 
-    <a href="index.php?view=cadastroFuncionario">
-        <button>Ir para Cadastro de Funcionarios</button>
-    </a>
+    
+    <div class="opcoes">
+
+        <a href="index.php?view=cadastroFuncionario">
+            <button>Ir para Cadastro de Funcionários</button>
+        </a>
+
+        <a href="index.php?controller=Funcionario&action=list">
+            <button>Ver Lista de Funcionários</button>
+        </a>
+
+    </div>
+
+
     
 </body>
 </html>

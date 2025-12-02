@@ -1,6 +1,6 @@
 <?php 
-    require_once __DIR__ . "./repositories/FuncionarioDao.php";
-    require_once __DIR__ . "./models/Funcionario.php";
+    require_once __DIR__ . "/../repositories/FuncionarioDAO.php";
+    require_once __DIR__ . "/../models/Funcionario.php";
 
     class FuncionarioController {
         private FuncionarioDAO $dao;
@@ -9,9 +9,17 @@
         }
 
         public function create(string $method): string {
+
+            if($method === "GET"){
+
+                require __DIR__ . "/../views/cadastroFuncionarios.php";
+                return "";
+
+            }
+
             if($method === "POST") {
 
-                require __DIR__ . "./views/cadastroFuncionarios.php";
+                require __DIR__ . "/../views/cadastroFuncionarios.php";
 
                 $funcionario = new Funcionario(
 
@@ -27,7 +35,8 @@
                     true,
                     htmlspecialchars($_POST["ADM_funcionario"]) === 'true' ? true : false,
                     htmlspecialchars($_POST["email_funcionario"]),
-                    password_hash(htmlspecialchars($_POST["senha_funcionario"]), PASSWORD_BCRYPT)
+                    htmlspecialchars($_POST["senha_funcionario"])
+                    /*password_hash(htmlspecialchars($_POST["senha_funcionario"]), PASSWORD_BCRYPT)*/
                 
 
                 );
@@ -41,9 +50,20 @@
             }
         }
 
-        public function getAllFuncionarios() {
-            return $this->dao->getAllFuncionarios();
+        public function list(string $method): string {
+            if ($method === "GET") {
+        
+                // 1. Busca os dados
+                $funcionarios = $this->dao->getAllFuncionarios();
+        
+                // 2. Carrega a View (A variável $funcionarios fica disponível em listarFuncionarios.php)
+                require __DIR__ . "/../views/listarFuncionarios.php";
+        
+                return ""; // Retorna vazio pois a View já foi renderizada
+            }
+            return "Método não suportado.";
         }
+
 
 
     }

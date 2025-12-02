@@ -1,19 +1,19 @@
 <?php
     abstract class Conexao{
-        private static string $server = "127.0.0.1";
-        private static string $dbname = "CIPA_APP";
-        private static string $user = "root";
-        private static string $password = "";
-        private static string $port = "3307";
+        private  string $server = "127.0.0.1";
+        private  string $dbname = "CIPA_APP";
+        private  string $user = "root";
+        private  string $password = "";
+        private  string $port = "3307";
     
         public function __construct() {}
 
         public static function fazerConexao(): PDO{
             try{
                 $conn = new PDO(
-                    "mysql:host=" . self::$server . ";dbname=" . self::$dbname . ";port=" . self::$port,
-                    self::$user,
-                    self::$password
+                    "mysql:host=" . $this->server . ";dbname=" . $this->dbname . ";port=" . $this->port,
+                    $this->user,
+                    $this->password
                 );
 
                

@@ -12,6 +12,10 @@ function carregarView($view) {
             require "views/cadastroFuncionarios.php";
             break;
 
+        case 'ListaFuncionarios': // Novo case para a lista
+            require "views/listarFuncionarios.php";
+            break;    
+
         case 'cadastroFuncionario':
             require "views/cadastroFuncionarios.php";
             break;

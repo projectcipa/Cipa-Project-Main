@@ -7,7 +7,7 @@
     <title>Cadastro de funcionarios</title>
 </head>
 <body>
-    <form action="index.php?view=FuncionarioCriado" method="POST">
+    <form action="index.php?controller=Funcionario&action=create" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" name="nome_funcionario" id="nome">
         <br>

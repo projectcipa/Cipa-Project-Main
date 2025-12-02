@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . "/../utils/conexao.php";
-require_once __DIR__ . "/../models/Funcionario.php";
+require_once __DIR__ . '/../utils/Conexao.php';
+require_once __DIR__ . '/../models/Funcionario.php';
 
 class FuncionarioDAO {
 
