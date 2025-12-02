@@ -1,0 +1,50 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d524a;
+
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+body{
+
+    align-items: center;
+    align-content: center;
+
+}
+
+.opcoes{
+
+    margin-top: 35px;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+button{
+
+    color: #4d524a;
+    background-color: #fcb900;
+    align-self: center;
+    padding: 13px;
+    border-radius: 5px;
+
+}
+
+button:hover{
+
+    cursor: pointer;
+
+}
