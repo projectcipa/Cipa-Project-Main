@@ -90,12 +90,12 @@ class FuncionarioDAO {
 
         return $funcionarios;
 
-    } catch (PDOException $e) {
+        } catch (PDOException $e) {
     
-        error_log("Erro em Funcionario DAO (getAllFuncionarios): " . $e->getMessage());
-        return [];
+            error_log("Erro em Funcionario DAO (getAllFuncionarios): " . $e->getMessage());
+            return [];
+        }
     }
-}
 
 }
 

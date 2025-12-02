@@ -25,8 +25,8 @@ CREATE TABLE candidato (
   UNIQUE KEY funcionario_FK (funcionario_FK),
   UNIQUE KEY numero_candidato (numero_candidato),
   UNIQUE KEY foto_candidato (foto_candidato),
-  CONSTRAINT candidato_fk FOREIGN KEY (funcionario_FK) REFERENCES funcionario (id_funcionario),
-  CONSTRAINT eleicao_fk FOREIGN KEY (eleicao_FK) REFERENCES eleicao (id_eleicao)
+  CONSTRAINT candidato_fk_candidato FOREIGN KEY (funcionario_FK) REFERENCES funcionario (id_funcionario),
+  CONSTRAINT eleicao_fk_candidato FOREIGN KEY (eleicao_FK) REFERENCES eleicao (id_eleicao)
 );
 
 CREATE TABLE documento (

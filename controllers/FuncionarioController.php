@@ -59,7 +59,7 @@
                 // 2. Carrega a View (A variável $funcionarios fica disponível em listarFuncionarios.php)
                 require __DIR__ . "/../views/listarFuncionarios.php";
         
-                return ""; // Retorna vazio pois a View já foi renderizada
+                return "";
             }
             return "Método não suportado.";
         }
