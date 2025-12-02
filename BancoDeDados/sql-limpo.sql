@@ -65,7 +65,7 @@ CREATE TABLE funcionario (
   ativo_funcionario TINYINT(1) NOT NULL DEFAULT 1,
   ADM_funcionario TINYINT(1) NOT NULL DEFAULT 0,
   email_funcionario VARCHAR(100) NOT NULL,
-  senha_funcionario VARCHAR(20) NOT NULL,
+  senha_funcionario VARCHAR(255) NOT NULL,
   PRIMARY KEY (id_funcionario),
   UNIQUE KEY email_funcionario (email_funcionario),
   UNIQUE KEY CPF_funcionario (CPF_funcionario),
