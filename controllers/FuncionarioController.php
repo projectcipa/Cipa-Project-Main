@@ -42,12 +42,16 @@
                 );
 
                 $response = $this->dao->registrarFuncionario($funcionario);
-                if ($response) {                    
-                    return "Usuário Cadastrado com Sucesso";
+                if ($response) {   
+                    /*(Código para quando clicaar no botão criar ir para a pagina de listagem)  - >  header('Location: index.php?view=ListaFuncionarios');
+                    exit;*/           
+                    return "Funcionario Cadastrado com Sucesso";
+                    
                 }
-                return "Problema na criação do usuário";
+                return "Problema na criação do usuário!!!";
 
             }
+
         }
 
         public function list(string $method): string {
