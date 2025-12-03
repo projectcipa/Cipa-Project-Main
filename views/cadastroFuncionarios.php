@@ -24,13 +24,13 @@
         <input type="date" name="data_contratacao_funcionario" id="data_contratacao">
         <br>
         <label for="telefone">Telefone: </label>
-        <input type="text" name="telefone_funcionario" id="telefone">
+        <input type="text" name="telefone_funcionario" id="telefone" maxlength="11">
         <br>
         <label for="matricula">Matrícula: </label>
-        <input type="text" name="matricula_funcionario" id="matricula">
+        <input type="text" name="matricula_funcionario" id="matricula" maxlenght="20">
         <br>
         <label for="codigo_voto">Código de Voto: </label>
-        <input type="text" name="codigo_voto_funcionario" id="codigo_voto">
+        <input type="text" name="codigo_voto_funcionario" id="codigo_voto" maxlenght="8">
         <br>
         <label for="ADM">Administrador (ADM): </label>
         <select name="ADM_funcionario" id="ADM">
