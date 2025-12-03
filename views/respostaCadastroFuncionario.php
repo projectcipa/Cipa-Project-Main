@@ -5,9 +5,9 @@
     $render = $controller->create($_SERVER["REQUEST_METHOD"]);
 
     if ($render) {
-        echo("<h1 align='Center'>Usuário cadastrado com sucesso!");
+        echo("<h1 align='Center'>Funcionário cadastrado com sucesso!");
     } else {
-        echo("<h1 align='Center'>Usuário Não foi cadastrado!</h1><br>");
+        echo("<h1 align='Center'>Funcionário Não foi cadastrado!</h1><br>");
     }
     //echo("<a href='./cadastroFuncionarios.php'>Vizualizar Lista de Funcionários</a>")
 ?>
