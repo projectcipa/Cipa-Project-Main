@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/cadastrarFuncionarios.css">
+    <link rel="stylesheet" href="../css/cadastrarFuncionarios.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de funcionarios</title>
 </head>
 <body>
-    <form action="index.php?controller=Funcionario&action=create" method="POST">
+    <form action="./respostaCadastroFuncionario.php" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" name="nome_funcionario" id="nome">
         <br>
@@ -15,7 +15,7 @@
         <input type="text" name="sobrenome_funcionario" id="sobrenome">
         <br>
         <label for="CPF">CPF: </label>
-        <input type="text" name="CPF_funcionario" id="CPF">
+        <input type="text" name="CPF_funcionario" id="CPF" maxlength="11">
         <br>
         <label for="data_nascimento">Desata de Nascimento: </label>
         <input type="date" name="data_nascimento_funcionario" id="data_nascimento">
@@ -45,7 +45,7 @@
         <input type="password" name="senha_funcionario" id="senha">
         <br>
         <button>Criar</button>
-    </form>
+    </form><br>
     <a href="javascript:history.go(-1)">Voltar</a> 
 </body>
 </html>

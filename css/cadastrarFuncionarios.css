@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #4d524a;
+    text-decoration: none;
 
 }
 
@@ -38,8 +39,10 @@ button{
     color: #4d524a;
     background-color: #fcb900;
     align-self: center;
-    padding: 13px;
+    padding: 8px;
     border-radius: 5px;
+    min-width: 80px;
+
 
 }
 
@@ -47,4 +50,9 @@ button:hover{
 
     cursor: pointer;
 
+}
+
+a{
+    margin-left: 20px;
+    margin-top: 15px;
 }

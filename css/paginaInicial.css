@@ -5,11 +5,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #4d524a;
+    text-decoration: none;
 
 }
 
 header{
 
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -40,11 +42,18 @@ button{
     align-self: center;
     padding: 13px;
     border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
 
 }
 
 button:hover{
 
     cursor: pointer;
+    box-shadow: 5px 5px 15px 5px #FCB900;
+    transform: translateY(-2px);
 
 }

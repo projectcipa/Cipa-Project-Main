@@ -14,12 +14,13 @@
 
                 require __DIR__ . "/../views/cadastroFuncionarios.php";
                 return "";
+                
 
             }
 
             if($method === "POST") {
 
-                require __DIR__ . "/../views/cadastroFuncionarios.php";
+                //require __DIR__ . "/../views/cadastroFuncionarios.php";
 
                 $funcionario = new Funcionario(
 
@@ -45,25 +46,24 @@
                 if ($response) {   
                     /*(Código para quando clicaar no botão criar ir para a pagina de listagem)  - >  header('Location: index.php?view=ListaFuncionarios');
                     exit;*/           
-                    return "Funcionario Cadastrado com Sucesso";
+                    return true;
                     
                 }
-                return "Problema na criação do usuário!!!";
+                return false;
 
             }
 
         }
 
-        public function list(string $method): string {
+        public function list(string $method): array {
             if ($method === "GET") {
         
                 // 1. Busca os dados
-                $funcionarios = $this->dao->getAllFuncionarios();
-        
-                // 2. Carrega a View (A variável $funcionarios fica disponível em listarFuncionarios.php)
-                require __DIR__ . "/../views/listarFuncionarios.php";
-        
-                return "";
+                $funcionarios = $this->dao->listaFuncionarios();
+                //echo("List: " . "<br>");
+                //var_dump($funcionarios);
+                return $funcionarios;
+                
             }
             return "Método não suportado.";
         }
