@@ -1,10 +1,10 @@
 <?php
     abstract class Conexao{
         private static string $server = "127.0.0.1";
-        private static string $dbname = "CIPA_APP";
-        private static string $user = "root";
-        private static string $password = "";
-        private static string $port = "3307";
+        private static string $dbname = "cipa_t1";
+        private static string $user = "daxcode";
+        private static string $password = "1234";
+        private static string $port = "3306";
     
         public function __construct() {}
 

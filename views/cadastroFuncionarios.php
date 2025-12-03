@@ -7,7 +7,7 @@
     <title>Cadastro de funcionarios</title>
 </head>
 <body>
-    <form action="index.php?controller=Funcionario&action=create" method="POST">
+    <form action="./paginaRespostaCadastroFuncionario.php" method="POST">
         <label for="nome">Nome: </label>
         <input type="text" name="nome_funcionario" id="nome">
         <br>
@@ -15,7 +15,7 @@
         <input type="text" name="sobrenome_funcionario" id="sobrenome">
         <br>
         <label for="CPF">CPF: </label>
-        <input type="text" name="CPF_funcionario" id="CPF">
+        <input type="text" name="CPF_funcionario" id="CPF" maxlength="11">
         <br>
         <label for="data_nascimento">Desata de Nascimento: </label>
         <input type="date" name="data_nascimento_funcionario" id="data_nascimento">

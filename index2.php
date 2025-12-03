@@ -14,5 +14,5 @@
 <body>
 
 <?php
-carregarView($view);
+    carregarView($view);
 ?>

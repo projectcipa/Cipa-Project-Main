@@ -28,26 +28,26 @@
             </thead>
             <tbody>
                 <?php foreach ($funcionarios as $func): ?>
-                <tr>
-                    <td><?php echo htmlspecialchars($func['id_funcionario']); ?></td>
-                    <td><?php echo htmlspecialchars($func['nome_funcionario'] . ' ' . $func['sobrenome_funcionario']); ?></td>
-                    <td><?php echo htmlspecialchars($func['email_funcionario']); ?></td>
-                    <td><?php echo htmlspecialchars($func['matricula_funcionario']); ?></td>
-                    <td><?php echo htmlspecialchars($func['CPF_funcionario'] ?? 'N/A'); ?></td>
-                    <td><?php echo htmlspecialchars($func['data_contratacao_funcionario']); ?></td>
-                    <td>
-                        <?php echo ($func['ADM_funcionario'] == 1) ? 'Sim' : 'Não'; ?>
-                    </td>
-                    <td>
-                        <?php 
-                            if ($func['ativo_funcionario'] == 1) {
-                                echo '<span class="ativo">Ativo</span>';
-                            } else {
-                                echo '<span class="inativo">Inativo</span>';
-                            }
-                        ?>
-                    </td>
-                </tr>
+                    <tr>
+                        <td><?php echo htmlspecialchars($func['id_funcionario']); ?></td>
+                        <td><?php echo htmlspecialchars($func['nome_funcionario'] . ' ' . $func['sobrenome_funcionario']); ?></td>
+                        <td><?php echo htmlspecialchars($func['email_funcionario']); ?></td>
+                        <td><?php echo htmlspecialchars($func['matricula_funcionario']); ?></td>
+                        <td><?php echo htmlspecialchars($func['CPF_funcionario'] ?? 'N/A'); ?></td>
+                        <td><?php echo htmlspecialchars($func['data_contratacao_funcionario']); ?></td>
+                        <td>
+                            <?php echo ($func['ADM_funcionario'] == 1) ? 'Sim' : 'Não'; ?>
+                        </td>
+                        <td>
+                            <?php 
+                                if ($func['ativo_funcionario'] == 1) {
+                                    echo '<span class="ativo">Ativo</span>';
+                                } else {
+                                    echo '<span class="inativo">Inativo</span>';
+                                }
+                            ?>
+                        </td>
+                    </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
