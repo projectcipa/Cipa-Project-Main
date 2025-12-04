@@ -1,7 +1,10 @@
 <?php
-    class Eleicao {
+
+        require_once __DIR__ . "./Documento.php";
+
+        class Eleicao {
         private int $id_eleicao;
-        private int $edital_FK;
+        private Documento $edital_FK;
         private string $data_inicio_eleicao;
         private string $data_fim_eleicao;
         private string $status_eleicao;
