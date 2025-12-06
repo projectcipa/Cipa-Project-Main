@@ -57,6 +57,16 @@
                                 }
                             ?>
                         </td>
+                         <td>
+                            <!-- Edit -->
+                            <a href="./editarFuncionario.php?id=<?php echo $funcionario['id_funcionario']; ?>"><button>Editar</button></a>
+
+                            <!-- Delete (POST) -->
+                            <form action="./respostaApagarFuncionario.php" method="POST" style="display:inline;" onsubmit="return confirm('Deseja realmente apagar este funcionário?');">
+                                <input type="hidden" name="id_funcionario" value="<?php echo $funcionario['id_funcionario']; ?>">
+                                <button type="submit">Apagar</button>
+                            </form>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
