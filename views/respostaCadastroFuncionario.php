@@ -29,7 +29,7 @@
         <button>Voltar para a Página de Cadastro</button>
     </a>
 
-    <a href='./index.php'>
+    <a href='../index.php'>
         <button>Voltar para a Página Inicial</button>
     </a>
 
