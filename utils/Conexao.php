@@ -6,8 +6,6 @@
         private static string $password = "";
         private static string $port = "3307";
     
-        public function __construct() {}
-
         public static function fazerConexao(): PDO{
             try{
                 $conn = new PDO(
