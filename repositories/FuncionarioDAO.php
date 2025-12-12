@@ -171,11 +171,11 @@ class FuncionarioDAO {
                 $funcionario["senha_funcionario"]
             );
 
-            echo($f->getNome_funcionario());
+            return $f;
             
         } catch (PDOException $e) {
             error_log("Erro em Funcionario DAO (atualizaFuncionario): " . $e->getMessage());
-            return false;
+            return null;
         }
     }
 }

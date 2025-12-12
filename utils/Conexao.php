@@ -1,13 +1,11 @@
 <?php
     abstract class Conexao{
         private static string $server = "127.0.0.1";
-        private static string $dbname = "CIPA_APP";
+        private static string $dbname = "cipa_copia";
         private static string $user = "root";
         private static string $password = "";
         private static string $port = "3307";
     
-        public function __construct() {}
-
         public static function fazerConexao(): PDO{
             try{
                 $conn = new PDO(
