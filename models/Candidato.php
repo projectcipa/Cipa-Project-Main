@@ -1,28 +1,28 @@
 <?php
 
-        require_once __DIR__ . "./Funcionario.php";
+        require_once __DIR__ . "/Funcionario.php";
 
         class Candidato {
                 private int $id_candidato;
-                private Funcionario $funcionario_FK;
-                private int $foto_candidato;
+                private ?Funcionario $funcionario_FK;
+                private string $foto_candidato;
                 private int $numero_candidato;
-                private int $cargo_candidato;
-                private int $data_registro_candidato;
+                private string $cargo_candidato;
+                private string $data_registro_candidato;
                 private int $eleicao_FK;
                 private int $status_candidato_ata;
                 private int $quantidade_voto_candidato;
 
                 public function __construct(
-                $_idCandidato,
-                $_funcionarioFK,
-                $_fotoCandidato,
-                $_numeroCandidato,
-                $_cargoCandidato,
-                $_dataRegistroCandidato,
-                $_eleicaoFK,
-                $_statusCandidatoAta,
-                $_quantidadeVotoCandidato
+                        $_idCandidato,
+                        $_numeroCandidato,
+                        $_cargoCandidato,
+                        $_dataRegistroCandidato,
+                        $_eleicaoFK,
+                        $_statusCandidatoAta,
+                        $_quantidadeVotoCandidato,
+                        $_funcionarioFK = null,
+                        $_fotoCandidato = ""
                 ) {
                 $this->id_candidato = $_idCandidato;
                 $this->funcionario_FK = $_funcionarioFK;
