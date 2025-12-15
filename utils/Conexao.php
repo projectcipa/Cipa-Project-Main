@@ -1,7 +1,7 @@
 <?php
     abstract class Conexao{
         private static string $server = "127.0.0.1";
-        private static string $dbname = "cipa_copia";
+        private static string $dbname = "cipa_app";
         private static string $user = "root";
         private static string $password = "";
         private static string $port = "3307";
