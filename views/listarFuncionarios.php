@@ -20,6 +20,11 @@
 
     <?php if (empty($funcionarios)): ?>
         <p>Nenhum funcionário cadastrado no momento.</p>
+
+        <a href="../index.php">
+            <button>Voltar à Página Inicial</button>
+        </a>
+
     <?php else: ?>
         
         <table>

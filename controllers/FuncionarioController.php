@@ -58,10 +58,8 @@
         public function list(string $method): array {
             if ($method === "GET") {
         
-                // 1. Busca os dados
                 $funcionarios = $this->dao->listaFuncionarios();
-                //echo("List: " . "<br>");
-                //var_dump($funcionarios);
+    
                 return $funcionarios;
                 
             }

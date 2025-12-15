@@ -1,10 +1,38 @@
 body { 
     font-family: Arial, sans-serif; margin: 20px; 
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
   
 
 h2 {
-     color: #333; 
+    color: #3A4839;
+    text-align: center;
+    align-self: center; 
+}
+
+button{
+
+    color: #4d524a;
+    background-color: #fcb900;
+    align-self: center;
+    padding: 13px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+
+}
+
+button:hover{
+
+    cursor: pointer;
+
 }
 
 table { 
