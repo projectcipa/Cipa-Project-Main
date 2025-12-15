@@ -1,0 +1,142 @@
+
+:root {
+    --color-primary: #3A4839; 
+    --color-button-fill: #F4C430; 
+    --color-button-stroke: #DBB234; 
+    --color-label: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.cadastro-form {
+    width: 380px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold; 
+    color: var(--color-primary); 
+    padding-right: 15px;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+hr{
+
+    margin: 5px;
+    border: 2px solid var(--color-button-fill);
+    box-shadow: 4px 4px 9px var(--color-button-fill);
+
+}
+
+
+.form-group label {
+    display: block;
+    font-size: 14px; 
+    color: var(--color-label); 
+    font-weight: 400; 
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.styled-input {
+    height: 35px; 
+    width: 339px; 
+    padding: 0 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+    outline: none;
+    background-color: #ffffff;
+}
+
+
+.styled-input {
+    font-size: 14px; 
+    font-weight: 400; 
+    color: #555;
+}
+
+.styled-input:focus {
+    border-color: #000000;
+}
+
+.select-group {
+    padding-left: 15px;
+}
+
+.select-title {
+    font-weight: bold;
+    display: block;
+}
+
+.selectAdm{
+
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    appearance: none;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #333;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    top: -1px;
+
+}
+
+.radio-options label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* Botão 'Criar' */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.btn-criar {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #000000;
+    background-color: var(--color-button-fill); 
+    border: 1px solid var(--color-button-stroke);
+    padding: 8px 25px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-criar:hover {
+    color: var(--color-primary);
+    background-color: #e0b42c;
+    border-color: #a8882a;
+}
