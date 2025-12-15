@@ -20,6 +20,10 @@
         <a href="./views/cadastroFuncionarios.php">
             <button>Cadastrar Funcionarios</button>
         </a>
+
+        <a href="./views/CadastroCandidato.php">
+            <button>Cadastrar Candidato</button>
+        </a>
     
          <a href="./views/listarFuncionarios.php">
             <button>Listar Funcionarios</button>
@@ -52,4 +56,5 @@
     ?>-->
 
 </body>
+
 </html>
