@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Funcionários</title>
-    <link rel="stylesheet" href="./css/listarFuncionarios.css">
+    <link rel="stylesheet" href="../css/listarFuncionarios.css">
 </head>
 <body>
 
@@ -33,6 +33,7 @@
                     <th>Contratação</th>
                     <th>ADM</th>
                     <th>Status</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,7 +58,7 @@
                                 }
                             ?>
                         </td>
-                         <td>
+                         <td class="opcoesbtns">
                             <!-- Edit -->
                             <a href="./editarFuncionario.php?id=<?php echo $funcionario['id_funcionario']; ?>"><button>Editar</button></a>
 

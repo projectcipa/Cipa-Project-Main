@@ -15,6 +15,14 @@ th, td {
     border: 1px solid #ddd; padding: 10px; text-align: left; 
 }
 
+.opcoesbtns{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
 th { 
     background-color: #f2f2f2; 
 }
