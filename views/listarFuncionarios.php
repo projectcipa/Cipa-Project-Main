@@ -11,18 +11,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Funcionários</title>
-    <link rel="stylesheet" href="./css/listarFuncionarios.css">
+    <link rel="stylesheet" href="../css/listarFuncionarios.css">
 </head>
 <body>
 
     <h2>Lista de Funcionários Cadastrados</h2>
     
-<<<<<<< HEAD
 
-=======
->>>>>>> 08a2da62c70ab79b3b27e0b257d1e616146cc2c0
     <?php if (empty($funcionarios)): ?>
         <p>Nenhum funcionário cadastrado no momento.</p>
+
+        <a href="../index.php">
+            <button>Voltar à Página Inicial</button>
+        </a>
+
     <?php else: ?>
         
         <table>
@@ -36,10 +38,10 @@
                     <th>Contratação</th>
                     <th>ADM</th>
                     <th>Status</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
-<<<<<<< HEAD
                 <?php foreach ($funcionarios as $funcionario): ?>
                     <!--<?php echo("teste")?>-->
                     <tr>
@@ -55,27 +57,21 @@
                         <td>
                             <?php 
                                 if ($funcionario['ativo_funcionario'] == 1) {
-=======
-                <?php foreach ($funcionarios as $func): ?>
-                    <tr>
-                        <td><?php echo htmlspecialchars($func['id_funcionario']); ?></td>
-                        <td><?php echo htmlspecialchars($func['nome_funcionario'] . ' ' . $func['sobrenome_funcionario']); ?></td>
-                        <td><?php echo htmlspecialchars($func['email_funcionario']); ?></td>
-                        <td><?php echo htmlspecialchars($func['matricula_funcionario']); ?></td>
-                        <td><?php echo htmlspecialchars($func['CPF_funcionario'] ?? 'N/A'); ?></td>
-                        <td><?php echo htmlspecialchars($func['data_contratacao_funcionario']); ?></td>
-                        <td>
-                            <?php echo ($func['ADM_funcionario'] == 1) ? 'Sim' : 'Não'; ?>
-                        </td>
-                        <td>
-                            <?php 
-                                if ($func['ativo_funcionario'] == 1) {
->>>>>>> 08a2da62c70ab79b3b27e0b257d1e616146cc2c0
                                     echo '<span class="ativo">Ativo</span>';
                                 } else {
                                     echo '<span class="inativo">Inativo</span>';
                                 }
                             ?>
+                        </td>
+                         <td class="opcoesbtns">
+                            <!-- Edit -->
+                            <a href="./editarFuncionario.php?id=<?php echo $funcionario['id_funcionario']; ?>"><button>Editar</button></a>
+
+                            <!-- Delete (POST) -->
+                            <form action="./respostaApagarFuncionario.php" method="POST" style="display:inline;" onsubmit="return confirm('Deseja realmente apagar este funcionário?');">
+                                <input type="hidden" name="id_funcionario" value="<?php echo $funcionario['id_funcionario']; ?>">
+                                <button type="submit">Apagar</button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>

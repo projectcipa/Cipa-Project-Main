@@ -15,7 +15,7 @@
         <input type="text" name="sobrenome_funcionario" id="sobrenome">
         <br>
         <label for="CPF">CPF: </label>
-        <input type="text" name="CPF_funcionario" id="CPF" maxlength="11" placeholder="000.000.000-00">
+        <input type="text" name="CPF_funcionario" id="CPF" maxlength="11">
         <br>
         <label for="data_nascimento">Desata de Nascimento: </label>
         <input type="date" name="data_nascimento_funcionario" id="data_nascimento">
@@ -27,7 +27,7 @@
         <input type="text" name="telefone_funcionario" id="telefone" maxlength="11">
         <br>
         <label for="matricula">Matrícula: </label>
-        <input type="text" name="matricula_funcionario" id="matricula" maxlenght="8">
+        <input type="text" name="matricula_funcionario" id="matricula" maxlenght="20">
         <br>
         <label for="codigo_voto">Código de Voto: </label>
         <input type="text" name="codigo_voto_funcionario" id="codigo_voto" maxlenght="8">

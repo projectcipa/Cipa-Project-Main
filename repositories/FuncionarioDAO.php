@@ -79,19 +79,10 @@ class FuncionarioDAO {
             $stmt->execute();
 
             $funcionarios = [];
-<<<<<<< HEAD
 
             while ($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $funcionarios[] = $data; 
             }            
-=======
-            
-
-            while ($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $funcionarios[] = $data; 
-            }
-
->>>>>>> 08a2da62c70ab79b3b27e0b257d1e616146cc2c0
             return $funcionarios;
 
         } catch (PDOException $e) {
@@ -160,13 +151,10 @@ class FuncionarioDAO {
             $stmt->execute();
             $funcionario = $stmt->fetch(PDO::FETCH_ASSOC);
             
-<<<<<<< HEAD
             if(!$funcionario){
                 return null;
             }
 
-=======
->>>>>>> 08a2da62c70ab79b3b27e0b257d1e616146cc2c0
             $f = new Funcionario(
                 $funcionario["id_funcionario"],
                 $funcionario["nome_funcionario"],
@@ -183,17 +171,13 @@ class FuncionarioDAO {
                 $funcionario["senha_funcionario"]
             );
 
-            echo($f->getNome_funcionario());
+            return $f;
             
         } catch (PDOException $e) {
             error_log("Erro em Funcionario DAO (atualizaFuncionario): " . $e->getMessage());
-            return false;
+            return null;
         }
     }
 }
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 08a2da62c70ab79b3b27e0b257d1e616146cc2c0

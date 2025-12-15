@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Guia de Estilo</title>
+    <title>Cadastro de Funcionarios</title>
     <link rel="stylesheet" href="../css/cadastrarFuncionarios.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
 
             <div class="form-group">
                 <label for="CPF_funcionario">CPF</label>
-                <input type="text" id="CPF_funcionario" name="CPF_funcionario" class="styled-input"  maxlength="11" placeholder="000.000.000-00">
+                <input type="text" id="CPF_funcionario" name="CPF_funcionario" class="styled-input" maxlength="11">
             </div>
 
             <div class="form-group">
@@ -41,12 +41,12 @@
 
             <div class="form-group">
                 <label for="telefone_funcionario">Telefone</label>
-                <input type="text" id="telefone_funcionario" name="telefone_funcionario" class="styled-input" maxlength="11" placeholder="71900000000">
+                <input type="text" id="telefone_funcionario" name="telefone_funcionario" class="styled-input" maxlength="11">
             </div>
 
             <div class="form-group">
                 <label for="matricula_funcionario">Matrícula</label>
-                <input type="text" id="matricula_funcionario" name="matricula_funcionario" class="styled-input" maxlength="10">
+                <input type="text" id="matricula_funcionario" name="matricula_funcionario" class="styled-input" maxlength="20">
             </div>
 
             <div class="form-group">
