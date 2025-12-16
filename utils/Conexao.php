@@ -1,10 +1,10 @@
 <?php
     abstract class Conexao{
-        private static string $server = "127.0.0.1";
+        private static string $server = "localhost";
         private static string $dbname = "cipa_app";
         private static string $user = "root";
         private static string $password = "";
-        private static string $port = "3307";
+        private static string $port = "3307";//mudar a porta
     
         public static function fazerConexao(): PDO{
             try{

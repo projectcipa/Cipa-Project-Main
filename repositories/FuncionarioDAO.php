@@ -138,7 +138,7 @@ class FuncionarioDAO {
             $stmt->bindValue(":id", $id, PDO::PARAM_INT);
             return $stmt->execute();
         } catch (PDOException $e) {
-            error_log("Erro em Funcionario DAO (atualizaFuncionario): " . $e->getMessage());
+            error_log("Erro em Funcionario DAO (deletarFuncionario): " . $e->getMessage());
             return false;
         }
     }

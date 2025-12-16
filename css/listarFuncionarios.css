@@ -36,18 +36,31 @@ button:hover{
 }
 
 table { 
+
     width: 100%; border-collapse: collapse; margin-top: 20px; 
 }
 
 th, td { 
+
     border: 1px solid #ddd; padding: 10px; text-align: left; 
+
 }
 
 .opcoesbtns{
 
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 3px;
+
+    button{
+
+        width:90px;
+        height:35px;
+        text-align: center;
+        padding: 3px;
+
+    }
 
 }
 
