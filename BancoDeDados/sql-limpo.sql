@@ -25,9 +25,10 @@ CREATE TABLE candidato (
   UNIQUE KEY funcionario_FK (funcionario_FK),
   UNIQUE KEY numero_candidato (numero_candidato),
   UNIQUE KEY foto_candidato (foto_candidato),
-  CONSTRAINT candidato_fk_candidato FOREIGN KEY (funcionario_FK) REFERENCES funcionario (id_funcionario),
-  CONSTRAINT eleicao_fk_candidato FOREIGN KEY (eleicao_FK) REFERENCES eleicao (id_eleicao)
+  FOREIGN KEY (funcionario_FK) REFERENCES funcionario (id_funcionario),
+  FOREIGN KEY (eleicao_FK) REFERENCES eleicao (id_eleicao)
 );
+
 
 CREATE TABLE documento (
   id_documento 				int(11) NOT NULL AUTO_INCREMENT,
@@ -82,3 +83,33 @@ CREATE TABLE voto (
   CONSTRAINT voto_fk FOREIGN KEY (funcionario_FK) REFERENCES funcionario (id_funcionario)
 );
 
+COMMIT;
+DESCRIBE funcionario;
+
+SELECT * FROM funcionario;
+
+SET SQL_SAFE_UPDATES = 0;
+
+SHOW CREATE TABLE funcionario;
+
+
+INSERT INTO cipa_app.eleicao(
+	id_eleicao,
+  edital_FK,
+  data_inicio_eleicao,
+  data_fim_eleicao,
+  status_eleicao
+  )VALUES(
+  	3,
+	1,
+	now(),
+	now(),
+	'ativo'
+
+);
+
+desc candidato;
+
+INSERT INTO cipa_app.documento
+(id_documento, data_hora_documento, data_inicio_documento, data_fim_documento, observacao_documento, pdf_documento, titulo_documento, tipo_documento)
+VALUES( 3, current_timestamp(),now(), now(), NULL, NULL, NULL, NULL);
