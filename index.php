@@ -29,6 +29,10 @@
             <button>Listar Funcionarios</button>
         </a>
 
+        <a href="./views/listarCandidatos.php">
+            <button>Listar Candidatos</button>
+        </a>
+
     </div>
 
 </body>

@@ -58,6 +58,18 @@
             return "Método não suportado.";
         }
 
+        public function listar(string $method): array {
+            if ($method === "GET") {
+        
+                $candidatos = $this->dao->listaCandidatos();
+    
+                return $candidatos;
+                
+            }
+            return "Método não suportado.";
+        }
+
+
 
 
     }

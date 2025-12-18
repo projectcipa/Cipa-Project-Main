@@ -103,6 +103,26 @@
         }   
     }
 
+    public function listaCandidatos(): array {
+        try {
+            $sql = "SELECT * FROM candidato ORDER BY data_registro_candidato";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            $candidatos = [];
+
+            while ($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $candidatos[] = $data; 
+            }            
+            return $candidatos;
+
+        } catch (PDOException $e) {
+    
+            error_log("Erro em Funcionario DAO (listaFuncionarios): " . $e->getMessage());
+            return [];
+        } 
+    }
+
 
   }
 ?>
