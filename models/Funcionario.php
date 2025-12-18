@@ -1,5 +1,6 @@
 <?php
     class Funcionario  {
+		// Atributos / Caracteristicas
         private int $id_funcionario;
 	    private string $nome_funcionario;
 	    private string $sobrenome_funcionario;
@@ -13,7 +14,8 @@
 	    private bool $ADM_funcionario;
 	    private string $email_funcionario;
 	    private string $senha_funcionario;
-
+		// 
+		// função / metodo
         public function __construct(
             $_idFuncionario,
 	        $_nomeFuncionario,

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Candidatos</title>
+    <link rel="stylesheet" href="../css/cadastrarFuncionarios.css">
 </head>
 <body>
     <form action="./test.php" method="POST" enctype="multipart/form-data">

@@ -14,7 +14,7 @@ h2 {
     align-self: center; 
 }
 
-button{
+button , #btn_voltar{
 
     color: #4d524a;
     background-color: #fcb900;

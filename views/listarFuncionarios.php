@@ -79,6 +79,6 @@
         </table>
 
     <?php endif; ?>
-
+    <a id="btn_voltar" href="../index.php">Pagina Inicial</a>
 </body>
 </html>
