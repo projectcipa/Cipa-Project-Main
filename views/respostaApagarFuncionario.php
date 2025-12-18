@@ -20,6 +20,6 @@
 </head>
 <body>
     <a href='./listarFuncionarios.php'><button>Voltar para a Lista</button></a>
-    <a href='/../index.php'><button>Voltar para a Página Inicial</button></a>
+    <a href='../index.php'><button>Voltar para a Página Inicial</button></a>
 </body>
 </html>
