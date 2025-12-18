@@ -35,7 +35,7 @@
                     <th>Cargo</th>
                     <th>Status</th>
                     <th>Quantidade de Votos</th>
-                    <th>Opções</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -51,16 +51,6 @@
                         <td><?php echo $candidato['cargo_candidato'] ?? 'N/A'; ?></td>
                         <td><?php echo $candidato['status_candidato_ata']; ?></td>
                         <td><?php echo $candidato['quantidade_voto_candidato'] ?? '0'; ?></td>
-                        <td class="opcoesbtns">
-                            <!-- Edit -->
-                            <a href="./editarCandidato.php?id=<?php echo $candidato['id_candidato']; ?>"><button>Editar</button></a>
-
-                            <!-- Delete (POST) -->
-                            <form action="./respostaApagarCandidato.php" method="POST" style="display:inline;" onsubmit="return confirm('Deseja realmente apagar este candidato?');">
-                                <input type="hidden" name="id_candidato" value="<?php echo $candidato['id_candidato']; ?>">
-                                <button type="submit">Apagar</button>
-                            </form>
-                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -73,7 +63,6 @@
                     <th>Número</th>
                     <th>Cargo</th>
                     <th>Status</th>
-                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
