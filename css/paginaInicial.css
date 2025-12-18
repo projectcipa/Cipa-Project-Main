@@ -25,6 +25,31 @@ body{
 
 }
 
+@media screen and (max-width: 600px){
+
+    .opcoes{
+
+        margin-top: 35px;
+        align-self: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+            align-items: center;
+            align-content: center;
+            align-self: center;
+        }
+
+        button{
+            width: 200px;
+        }
+
+    }    
+
+}
+
 .opcoes{
 
     margin-top: 35px;

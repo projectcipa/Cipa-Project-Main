@@ -27,15 +27,15 @@
 
     <?php else: ?>
         
-        <table>
+        <table class = "tableDesktop">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <!--<th>ID</th>-->
                     <th>Nome Completo</th>
                     <th>E-mail</th>
                     <th>Matrícula</th>
                     <th>CPF</th>
-                    <th>Contratação</th>
+                    <!--<th>Contratação</th>-->
                     <th>ADM</th>
                     <th>Status</th>
                     <th>Opções</th>
@@ -45,15 +45,57 @@
                 <?php foreach ($funcionarios as $funcionario): ?>
                     <!--<?php echo("teste")?>-->
                     <tr>
-                        <td><?php echo $funcionario['id_funcionario']; ?></td>
+                        <!--<td><?php echo $funcionario['id_funcionario']; ?></td>-->
                         <td><?php echo $funcionario['nome_funcionario'] . ' ' . $funcionario['sobrenome_funcionario']; ?></td>
                         <td><?php echo $funcionario['email_funcionario']; ?></td>
                         <td><?php echo $funcionario['matricula_funcionario']; ?></td>
                         <td><?php echo $funcionario['CPF_funcionario'] ?? 'N/A'; ?></td>
-                        <td><?php echo $funcionario['data_contratacao_funcionario']; ?></td>
+                        <!--<td><?php echo $funcionario['data_contratacao_funcionario']; ?></td>-->
                         <td>
                             <?php echo ($funcionario['ADM_funcionario'] == 1) ? 'Sim' : 'Não'; ?>
                         </td>
+                        <td>
+                            <?php 
+                                if ($funcionario['ativo_funcionario'] == 1) {
+                                    echo '<span class="ativo">Ativo</span>';
+                                } else {
+                                    echo '<span class="inativo">Inativo</span>';
+                                }
+                            ?>
+                        </td>
+                         <td class="opcoesbtns">
+                            <!-- Edit -->
+                            <a href="./editarFuncionario.php?id=<?php echo $funcionario['id_funcionario']; ?>"><button>Editar</button></a>
+
+                            <!-- Delete (POST) -->
+                            <form action="./respostaApagarFuncionario.php" method="POST" style="display:inline;" onsubmit="return confirm('Deseja realmente apagar este funcionário?');">
+                                <input type="hidden" name="id_funcionario" value="<?php echo $funcionario['id_funcionario']; ?>">
+                                <button type="submit">Apagar</button>
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+
+        <table class = "tableMobile">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Matrícula</th>
+                    <th>CPF</th>
+                    <th>Status</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($funcionarios as $funcionario): ?>
+                    <!--<?php echo("teste")?>-->
+                    <tr>
+                        <td><?php echo $funcionario['nome_funcionario'] . ' ' . $funcionario['sobrenome_funcionario']; ?></td>
+                        <td><?php echo $funcionario['matricula_funcionario']; ?></td>
+                        <td><?php echo $funcionario['CPF_funcionario'] ?? 'N/A'; ?></td>
                         <td>
                             <?php 
                                 if ($funcionario['ativo_funcionario'] == 1) {

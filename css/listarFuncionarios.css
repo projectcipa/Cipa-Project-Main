@@ -5,6 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0px 30px 0px 30px;
+
 }
   
 
@@ -35,6 +37,10 @@ button:hover{
 
 }
 
+.tableMobile{
+    display: none;
+}
+
 table { 
 
     width: 100%; border-collapse: collapse; margin-top: 20px; 
@@ -42,7 +48,7 @@ table {
 
 th, td { 
 
-    border: 1px solid #ddd; padding: 10px; text-align: left; 
+    border: 1px solid #ddd; padding: 10px; text-align: center; 
 
 }
 
@@ -66,6 +72,62 @@ th, td {
 
 th { 
     background-color: #f2f2f2; 
+}
+
+@media screen and (max-width: 600px){
+
+    .tableMobile{
+        display: block;
+
+    }
+
+    th, td{
+        padding: 3px;
+    }
+
+    .opcoesbtns{
+
+        align-items: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        a{
+            align-content: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        form{
+        
+            align-content: center;
+            text-align: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button{
+
+            width:70px;
+            height:30px;
+            text-align: center;
+            padding: 3px;
+            align-self: center;
+
+        }
+
+    }
+
+
+    .tableDesktop{
+        display: none;
+    }
+
 }
 
 .ativo { 
