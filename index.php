@@ -2,38 +2,35 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/paginaInicial.css">
+    <link rel="stylesheet" href="./css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Página de Login</title>
 </head>
 <body>
 
     <header>
 
-        <h1>Sistema da Cipa</h1>
+        <h1>Votação Cipa  [nome da empresa]</h1>
+
+        <h2>Entre com CPF</h2>
 
     </header>
 
+    <section id="secaoLoginCPF">
 
-    <div class="opcoes">
+        <form action="">
 
-        <a href="./views/cadastroFuncionarios.php">
-            <button>Cadastrar Funcionarios</button>
-        </a>
+            <label for="cpf">CPF</label><br>
+            <input type="text" placeholder="Insira aqui seu CPF" maxlength="11" id="cpf_funcionario" name="cpf_funcionario">
 
-        <a href="./views/CadastroCandidato.php">
-            <button>Cadastrar Candidato</button>
-        </a>
-    
-         <a href="./views/listarFuncionarios.php">
-            <button>Listar Funcionarios</button>
-        </a>
+            <button type="submit">Entrar</button>
 
-        <a href="./views/listarCandidatos.php">
-            <button>Listar Candidatos</button>
-        </a>
+        </form>
 
-    </div>
+        <a href="./views/paginaInicial.php">Ir para o login de Admin</a>
+
+    </section>
+
 
 </body>
 
