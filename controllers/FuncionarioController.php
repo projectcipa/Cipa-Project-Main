@@ -128,7 +128,6 @@
                     if ($senhaRecebida === '') {
                         $senha = $existing->getSenha_funcionario();
                     } else {
-                        // use password_hash se a sua tabela armazena hash
                         $senha = password_hash($senhaRecebida, PASSWORD_DEFAULT);
                     }
 

@@ -18,14 +18,14 @@
 
     <section id="secaoLoginCPF">
 
-        <form action="">
+        <form action="./views/paginaInicialFuncionarios.php">
 
             <label for="cpf">CPF</label><br>
             <input type="text" placeholder="Insira aqui seu CPF" maxlength="11" id="cpf_funcionario" name="cpf_funcionario">
 
-            <button type="submit">Entrar</button>
+            <button>Entrar</button>
 
-        </form>
+        </form><br>
 
         <a href="./views/paginaInicial.php">Ir para o login de Admin</a>
 
