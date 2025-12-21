@@ -42,7 +42,7 @@ section{
 
 form{
 
-    padding: 10px;
+    padding: 40px;
     width: 200px;
     height: 200px;
     border: 2px solid #4d524a;
@@ -66,5 +66,11 @@ button{
     font-weight: bold;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
+
+}
+
+button:hover{
+
+    cursor: pointer;
 
 }
