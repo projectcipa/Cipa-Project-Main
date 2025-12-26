@@ -105,7 +105,7 @@
 
     public function listaCandidatos(): array {
         try {
-            $sql = " SELECT c.*, f.nome_funcionario, f.sobrenome_funcionario FROM candidato c LEFT JOIN funcionario f ON c.funcionario_FK = f.id_funcionario ";
+            $sql = "SELECT * FROM candidato ORDER BY data_registro_candidato";
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
 
