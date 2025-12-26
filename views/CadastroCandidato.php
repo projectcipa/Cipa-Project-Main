@@ -20,9 +20,9 @@
         <label for="Numero">Número do candidato: </label>
         <input type="text" name="Numero_candidato" id="Numero">
         <br>
-        <label for="Data_registro">Data de registro da candidatura: </label>
+        <!--<label for="Data_registro">Data de registro da candidatura: </label>
         <input type="date" name="Data_registro" id="Data_registro">
-        <br>
+        <br>-->
         <label for="Eleição">Eleição vinculada: </label>
         <input type="number" name="Eleicao_vinculada" id="Eleição">
         <br>

@@ -26,7 +26,6 @@
                     0,
                     htmlspecialchars($_POST["Numero_candidato"]),
                     htmlspecialchars($_POST["Setor_Candidato"]),    
-                    htmlspecialchars($_POST["Data_registro"]),
                     (int) htmlspecialchars($_POST["Eleicao_vinculada"]),
                     3, //status                
                     0 //quantidade votos                                       

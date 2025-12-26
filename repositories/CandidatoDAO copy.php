@@ -51,7 +51,7 @@
                     :funcionario_FK,                
                     :numero_candidato,
                     :cargo_candidato,
-                    :data_registro_candidato,
+                    now(),
                     :eleicao_FK,
                     :status_candidato_ata,
                     :quantidade_voto_candidato

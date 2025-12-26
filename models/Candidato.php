@@ -8,7 +8,7 @@
                 private string $foto_candidato;
                 private int $numero_candidato;
                 private string $cargo_candidato;
-                private string $data_registro_candidato;
+                //private string $data_registro_candidato;
                 private int $eleicao_FK;
                 private int $status_candidato_ata;
                 private int $quantidade_voto_candidato;
@@ -17,7 +17,7 @@
                         $_idCandidato,
                         $_numeroCandidato,
                         $_cargoCandidato,
-                        $_dataRegistroCandidato,
+                        //$_dataRegistroCandidato,
                         $_eleicaoFK,
                         $_statusCandidatoAta,
                         $_quantidadeVotoCandidato,
@@ -29,7 +29,7 @@
                 $this->foto_candidato = $_fotoCandidato;
                 $this->numero_candidato = $_numeroCandidato;
                 $this->cargo_candidato = $_cargoCandidato;
-                $this->data_registro_candidato = $_dataRegistroCandidato;
+                //$this->data_registro_candidato = $_dataRegistroCandidato;
                 $this->eleicao_FK = $_eleicaoFK;
                 $this->status_candidato_ata = $_statusCandidatoAta;
                 $this->quantidade_voto_candidato = $_quantidadeVotoCandidato;

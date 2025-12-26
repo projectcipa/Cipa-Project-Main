@@ -51,7 +51,7 @@
                     :funcionario_FK,                
                     :numero_candidato,
                     :cargo_candidato,
-                    :data_registro_candidato,
+                    now(),
                     :eleicao_FK,
                     :status_candidato_ata,
                     :quantidade_voto_candidato
@@ -63,7 +63,7 @@
         $stmt2->bindValue(":funcionario_FK", $idFunc, PDO::PARAM_INT);
         $stmt2->bindValue(":numero_candidato", $candidato->getNumero_candidato(), PDO::PARAM_STR);
         $stmt2->bindValue(":cargo_candidato", $candidato->getCargo_candidato(), PDO::PARAM_STR);
-        $stmt2->bindValue(":data_registro_candidato", $candidato->getData_registro_candidato());
+        //$stmt2->bindValue(":data_registro_candidato", $candidato->getData_registro_candidato());
         $stmt2->bindValue(":eleicao_FK", $candidato->getEleicao_FK(), PDO::PARAM_INT);
         $stmt2->bindValue(":status_candidato_ata", $candidato->getStatus_candidato_ata(), PDO::PARAM_INT);
         $stmt2->bindValue(":quantidade_voto_candidato", $candidato->getQuantidade_voto_candidato(), PDO::PARAM_INT);
