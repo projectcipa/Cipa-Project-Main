@@ -1,3 +1,24 @@
+
+<?php
+    session_start();
+
+    // Se já estiver logado, NÃO deixa acessar o login
+    if (isset($_SESSION['id_funcionario']) && isset($_SESSION['ADM_funcionario'])) {
+
+        // Funcionário
+        if ($_SESSION['ADM_funcionario'] == 0) {
+            header("Location: ./views/paginaInicialFuncionario.php");
+            exit;
+        }
+
+        // Admin
+        if ($_SESSION['ADM_funcionario'] == 1) {
+            header("Location: ./views/paginaInicial.php");
+            exit;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,7 +48,7 @@
 
         </form><br>
 
-        <a href="./views/paginaInicial.php">Ir para o login de Admin</a>
+        <a href="./views/loginAdmin.php">Ir para o login de Admin</a>
 
     </section>
 

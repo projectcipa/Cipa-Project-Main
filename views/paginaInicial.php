@@ -1,3 +1,17 @@
+
+<?php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+    session_start();
+
+    // Se não estiver logado ou se não for funcionário
+    if (!isset($_SESSION['id_funcionario']) || $_SESSION['ADM_funcionario'] != 1) {
+        header("Location: ./loginAdmin.php"); // login Admin
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,6 +45,8 @@
         <a href="./listarCandidatos.php">
             <button>Listar Candidatos</button>
         </a>
+
+         <a href="logout.php">Sair</a>
 
     </div>
 
