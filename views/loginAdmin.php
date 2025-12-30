@@ -5,13 +5,13 @@
     // Se já estiver logado, NÃO deixa acessar o login
     if (isset($_SESSION['id_funcionario']) && isset($_SESSION['ADM_funcionario'])) {
 
-        // Funcionário
+        //Funcionário ADM = 0
         if ($_SESSION['ADM_funcionario'] == 0) {
             header("Location: ./paginaInicialFuncionario.php");
             exit;
         }
 
-        // Admin
+        //Admin ADM = 1
         if ($_SESSION['ADM_funcionario'] == 1) {
             header("Location: ./paginaInicial.php");
             exit;
