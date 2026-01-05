@@ -35,7 +35,6 @@ CREATE TABLE documento (
   data_hora_documento  		timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   data_inicio_documento 	date NOT NULL,
   data_fim_documento 		date NOT NULL,
-  observacao_documento 		varchar(200) DEFAULT NULL,
   pdf_documento 			varchar(300) DEFAULT NULL,
   titulo_documento 			varchar(100) DEFAULT NULL,
   tipo_documento 			enum('edital','ata') DEFAULT NULL,
